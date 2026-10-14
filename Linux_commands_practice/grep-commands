@@ -11,20 +11,28 @@ My qualification is education
 PHYSICAL training
 science and mathematics
 EOF
+
+
 [root@Astra grep-practice]# grep 'education' file
 education
 physical education
 higher education
 education system
 My qualification is education
+
+
 [root@Astra grep-practice]# grep '^education' file
 education
 education system
+
+
 [root@Astra grep-practice]# grep 'education$' file
 education
 physical education
 higher education
 My qualification is education
+
+
 [root@Astra grep-practice]# grep -i 'education' file
 education
 Education is important
@@ -32,10 +40,14 @@ physical education
 higher education
 education system
 My qualification is education
+
+
 [root@Astra grep-practice]# grep -v 'education' file
 Education is important
 PHYSICAL training
 science and mathematics
+
+
 [root@Astra grep-practice]# grep -e 'education' -e 'physical' file
 education
 physical education
