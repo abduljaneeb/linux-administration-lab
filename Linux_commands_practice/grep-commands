@@ -42,3 +42,26 @@ physical education
 higher education
 education system
 My qualification is education
+
+
+NOTES:-
+
+grep 'education' file
+
+grep '^education' file
+# Begin with the string education
+
+grep 'education$' file
+# Ending with the string education
+
+grep '^education$' file
+# Display only the exact word/line education
+
+grep -i 'education' file
+# Search without case sensitivity
+
+grep -v 'education' file
+# Display lines except those containing education
+
+grep -e 'education' -e 'physical' file
+# Search multiple strings
